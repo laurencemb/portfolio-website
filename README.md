@@ -1,2 +1,2 @@
 # portfolio-website
-Portfolio site for all ym front-end development work. 
+Portfolio site for all my front-end development work. 
