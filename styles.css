@@ -21,6 +21,10 @@ body {
   line-height: 1.5;
 }
 
+a{ 
+  margin-left: 15px;
+}
+
 .logo{
   font-size: 250%;
   pointer-events: none;
@@ -152,23 +156,22 @@ p {
 /* About me Section */
 
 #about-section{
-  border-right: solid 5px var(--corepink);
+ border-right: solid 5px var(--corepink);
   padding-right: 1rem;
+  height : 10%
+ }
 
-
-}
-
-.about-flex-item {
+/* .about-flex-item {
   padding-left: 1rem;
-}
+} */
 
 /* My work section */
 
 #work-section{
   border-right: solid 5px var(--corepink);
   padding-right: 1rem;
-  left: 0px;
- margin-right: 230px;
+  
+ margin-right: 350px;
 
 }
 
@@ -225,6 +228,14 @@ p {
     min-height: 150px;
     text-decoration: none;
     color: var(--siteblack);
+}
+
+.flex h2{
+  position: absolute;
+  left: 0px;
+  padding-left: 1rem;
+  border-right: var(--corepink);
+  height: 60%;
 }
 
 .flex-item:first-child {
@@ -287,7 +298,35 @@ p {
     
   } 
   .flex-item:first-child { min-height: 150px;} 
+
+  .page-section{
+    flex-basis: 100%;
+  }
+
+  a {
+    max-width: 80%;
+  }
+
+ .flex-nav{
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+
+ }
 }
+
+
+
+@media screen and (max-width: 1300px) {
+
+  .page-section{
+    flex-direction: column;
+    max-width: 770px;
+  }
+  
+ }
+  
+
 
 
 
