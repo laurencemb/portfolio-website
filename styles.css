@@ -71,7 +71,7 @@ body {
 
 .hero-banner {
 
-    background-image: linear-gradient(rgba(252, 251, 251, 0.2), rgba(0, 0, 0, 0.8)), url(../images/02-hero-bg.jpg);
+    background-image: linear-gradient(rgba(252, 251, 251, 0.2), rgba(0, 0, 0, 0.8)), url(/images/02-hero-bg.jpg);
     background-size: cover;
     height: 300px;
     background-position: center;
@@ -176,35 +176,35 @@ p {
 
 .project1 {
     display: flex;
-    background-image: url(../images/Shred\ it\ Landing\ Page.png);
+    background-image: url(/images/Shred\ it\ Landing\ Page.png);
     background-size: cover;
 
 }
 
 .project2 {
     display: flex;
-    background-image: url(../images/02-portfolio-1.jpg);
+    background-image: url(/images/02-portfolio-1.jpg);
     background-size: cover;
 
 }
 
 .project3 {
     display: flex;
-    background-image: url(../images/02-portfolio-2.jpg);
+    background-image: url(/images/02-portfolio-2.jpg);
     background-size: cover;
 
 }
 
 .project4 {
     display: flex;
-    background-image: url(../images/02-portfolio-3.jpg);
+    background-image: url(/images/02-portfolio-3.jpg);
     background-size: cover;
 
 }
 
 .project5 {
     display: flex;
-    background-image: url(../images/02-portfolio-2.jpg);
+    background-image: url(/images/02-portfolio-2.jpg);
     background-size: cover;
    
 
