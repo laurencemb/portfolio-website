@@ -1,0 +1,293 @@
+* {
+  box-sizing: border-box;
+}
+/* Variations */
+:root {
+ --sitewhite: #FCFAF9;
+ --siteblack: #333333;
+ --highlightpink: #E15A97;
+ --corepink: #F3D3BD;
+ --yellow: #EDB230;
+ --green: #06A77D;
+
+}
+
+/* Body */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.logo{
+  font-size: 250%;
+  pointer-events: none;
+}
+
+/* Navigation */
+
+.flex-nav{
+  background: var(--corepink);
+  box-shadow: 0px 0px 10px grey;
+  margin: 0;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: sticky;
+}
+
+.flex-nav-item{
+  list-style-type: none;
+  margin-right: 2rem;
+  padding: 20px;
+  position: sticky;
+  transition: 400ms ease-in-out;
+
+}
+
+.flex-nav-item a {
+  text-decoration: none;
+  color: black
+}
+
+.flex-nav-item:first-child{
+  margin-right: auto;
+  margin-left: 2rem;
+  pointer-events: none;
+}
+
+.flex-nav-item:hover{
+  background-color: var(--highlightpink);
+ font-weight: 700;
+
+}
+
+
+/* Hero Section including profile picture and call to action */
+
+
+.hero-banner {
+
+    background-image: linear-gradient(rgba(252, 251, 251, 0.2), rgba(0, 0, 0, 0.8)), url(../images/02-hero-bg.jpg);
+    background-size: cover;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.hero-text {
+    position: absolute;
+    bottom:15px;
+    right: 15px;
+   /*  transform: translate(-50%, -50%); */
+    color: white;
+    padding: 20px;
+}
+
+.profile-pic{
+  position: absolute;
+  height: 250px;
+  max-width: auto;
+  left: 10%;
+  top: 8%;
+  border-radius: 80px;
+  filter: drop-shadow( 8px 10px 10px  var(--siteblack));
+}
+
+.button-primary { 
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  background: white;
+  border: none;
+  outline: none;
+  border-radius: 5%;
+  padding: .5rem 1rem;
+  cursor: pointer;
+  transition: 200ms ease-in-out;
+
+}
+
+.button-primary:hover{
+background: var(--highlightpink);
+
+}
+
+/* headings and paragraph */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+/* Page sections */
+
+.page-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  Padding: 5rem;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.page-section p{
+  max-width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+/* About me Section */
+
+#about-section{
+  border-right: solid 5px var(--corepink);
+  padding-right: 1rem;
+
+
+}
+
+.about-flex-item {
+  padding-left: 1rem;
+}
+
+/* My work section */
+
+#work-section{
+  border-right: solid 5px var(--corepink);
+  padding-right: 1rem;
+  left: 0px;
+ margin-right: 230px;
+
+}
+
+
+
+.project1 {
+    display: flex;
+    background-image: url(../images/Shred\ it\ Landing\ Page.png);
+    background-size: cover;
+
+}
+
+.project2 {
+    display: flex;
+    background-image: url(../images/02-portfolio-1.jpg);
+    background-size: cover;
+
+}
+
+.project3 {
+    display: flex;
+    background-image: url(../images/02-portfolio-2.jpg);
+    background-size: cover;
+
+}
+
+.project4 {
+    display: flex;
+    background-image: url(../images/02-portfolio-3.jpg);
+    background-size: cover;
+
+}
+
+.project5 {
+    display: flex;
+    background-image: url(../images/02-portfolio-2.jpg);
+    background-size: cover;
+   
+
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.flex-item {
+    display: flex;
+    align-items: flex-end;
+    flex-basis: calc(50% - 1em);
+    margin: .5em;
+    min-height: 150px;
+    text-decoration: none;
+    color: var(--siteblack);
+}
+
+.flex-item:first-child {
+    min-height: 300px;
+    flex-basis: 100%;
+}
+
+.flex-item div {
+  background-color: var(--corepink);  
+  padding: 10px;
+
+}
+
+
+/* Footer and contact me */
+
+.contact-flex {
+  background: var(--corepink);
+  box-shadow: 0px 0px 10px grey;
+  margin: 20px;
+  padding: .5rem 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+  position: sticky;
+  flex-wrap: wrap;
+}
+
+.contact-flex-item{
+  list-style-type: none;
+  margin-right: 2rem;
+  position: sticky;
+  transition: 400ms ease-in-out;
+  margin-top: 20px;
+  
+}
+
+.contact-flex-item:hover{
+  background-color: var(--highlightpink);
+ font-weight: 700;
+
+}
+
+.contact-flex-item a{
+  text-decoration: none;
+  color: black
+}
+
+#contact-section{
+  border-right: solid 5px var(--highlightpink);
+  padding-right: 1rem;
+}
+
+/* Responsive design */
+
+@media screen and (max-width: 768px) {
+  .flex-item {
+    flex-basis: 100%;
+    
+  } 
+  .flex-item:first-child { min-height: 150px;} 
+}
+
+
+
